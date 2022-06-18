@@ -1,4 +1,49 @@
-body
-{
-  font-size: 40pt;
+* {
+  margin: 0 0;
+  padding: 0 0;
+  box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vmin;
+  height: 100vmin;
+}
+
+row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100vmin;
+  height: 32vmin;
+  margin: .5vmin 0;
+}
+
+button {
+  font-size: 26vmin;
+  width: 32vmin;
+  max-width: 32vmin;
+  height: 32vmin;
+  max-height: 32vmin;
+  overflow: hidden;
+  margin: 0 .5vmin;
+  background: transparent;
+  border: .05vmin solid orange;
+}
+button[disabled]{
+  color: white;
+}}
+
