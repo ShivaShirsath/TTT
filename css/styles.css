@@ -2,6 +2,7 @@
   margin: 0 0;
   padding: 0 0;
   box-sizing: border-box;
+  border-radius: 5vmin;
 }
 
 body {
@@ -33,17 +34,34 @@ row {
 }
 
 button {
+  font-size: 10vmin;
+  overflow: hidden;
+  background: transparent;
+  border: .05vmin solid orange;
+  width: 75vw;
+  max-width: 75vw;
+  height: 32vmin;
+  max-height: 32vmin;
+  margin: .5vmin .5vmin;
+}
+row > button {
   font-size: 26vmin;
   width: 32vmin;
   max-width: 32vmin;
-  height: 32vmin;
-  max-height: 32vmin;
-  overflow: hidden;
-  margin: 0 .5vmin;
-  background: transparent;
-  border: .05vmin solid orange;
 }
+
 button[disabled]{
   color: white;
-}}
+}
 
+@media (orientation: portrait) {
+  body {
+    flex-direction: column;
+  }
+}
+
+@media (orientation: landscape) {
+  body {
+    flex-direction: row;
+  }
+}
