@@ -16,7 +16,7 @@ document.onclick = function(e) {
   } else if (e.target.type == "submit" && e.target.innerHTML == "") {
     e.target.disabled = true;
     document.getElementById("turn").disabled = true;
-    document.getElementById("turns").disabled = true;
+    document.getElementById("turns").style = "pointer-events: none;";
     toggle();
     e.target.innerHTML = s;
     steps++;
