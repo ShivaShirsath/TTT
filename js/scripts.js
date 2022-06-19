@@ -1,16 +1,17 @@
-o = document.getElementById("o");
-o.innerHTML = "&#11093";
-x = document.getElementById("x");
-x.innerHTML = "&#10060";
-
+o = document.createElement("span");
+x = document.createElement("span");
 turns = document.getElementById("turns");
+
+o.innerHTML = "&#11093";
+x.innerHTML = "&#10060";
 turns.innerHTML = x.innerHTML;
+
 t = "";
 s = "";
-turn = true;
 steps = 0;
+
 document.onclick = function(e) {
-  if (e.target.id == "turn") {
+  if (e.target.id == "turn" || e.target.id == "turns") {
     toggle();  
   } else if (e.target.type == "submit" && e.target.innerHTML == "") {
     e.target.disabled = true;
@@ -21,6 +22,7 @@ document.onclick = function(e) {
     checkWin();
   }
 };
+
 function checkWin(){
   r = "";
   if (isWin(s)){
@@ -33,6 +35,7 @@ function checkWin(){
     reload(); 
   } 
 }
+
 function toggle(){
   if (turns.innerHTML.includes(o.innerHTML)) {
     s = o.innerHTML;
