@@ -1,11 +1,11 @@
 {
-  "name": "App Name",
-  "short_name": "website",
+  "name": "Tic Tac Toe",
+  "short_name": "Tic Tac Toe",
   "start_url": ".",
   "display": "fullscreen",
   "background_color": "#ff8800aa",
   "theme_color": "#ff8800",
-  "description": "app description",
+  "description": "This game is Created in html, Designed in css & Programmed in javascript.",
   "orientation": "any",
   "icons": [
     {
