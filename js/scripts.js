@@ -33,7 +33,8 @@ function checkWin(){
   }
   if (!r == "") {
     alert(r);
-    reload(); 
+    document.body.style.display = "none";
+    reload();
   } 
 }
 
