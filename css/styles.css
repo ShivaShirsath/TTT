@@ -16,7 +16,7 @@ column {
 body, column, row {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 column {
@@ -26,7 +26,6 @@ column {
 
 row {
   flex-direction: row;
-  height: 30vmin;
   margin: .5vmin 0;
 }
 
@@ -55,6 +54,9 @@ button[disabled] {
 @media (orientation: portrait) {
   body {
     flex-direction: column;
+  }
+  row {
+    width: 30vmin;
   }
 }
 
