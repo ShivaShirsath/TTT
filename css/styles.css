@@ -15,8 +15,8 @@ column {
 
 body, column, row {
   display: flex;
-  align-items: stretch;
-  justify-content: stretch;
+  align-items: center;
+  justify-content: center;
 }
 
 column {
