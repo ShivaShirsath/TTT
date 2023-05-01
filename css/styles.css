@@ -5,13 +5,16 @@
   border-radius: 5vmin;
 }
 
+html, body {
+  position: absolute;
+  inset: 0;
+}
+
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  height: 100vh;
 }
 
 column {
@@ -19,8 +22,8 @@ column {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vmin;
-  height: 100vmin;
+  position: relative;
+  inset: 0;
 }
 
 row {
@@ -28,7 +31,6 @@ row {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 100vmin;
   height: 32vmin;
   margin: .5vmin 0;
 }
@@ -44,6 +46,7 @@ button {
   max-height: 32vmin;
   margin: .5vmin .5vmin;
 }
+
 row > button {
   font-size: 26vmin;
   width: 32vmin;
