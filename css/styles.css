@@ -7,64 +7,63 @@
 }
 
 html,
-body,
-column {
+body {
   position: absolute;
   inset: 0;
 }
 
-body, column, row {
+body,
+column,
+row {
   display: flex;
-  align-items: center;
+  align-items: space-evenly;
   justify-content: space-evenly;
 }
 
 column {
   flex-direction: column;
   position: relative;
+  align-items: stretch;
+  border: .5vmin solid green;
+  margin: 1vmin;
+  aspect-ratio: 1;
 }
 
 row {
   flex-direction: row;
-  margin: .5vmin 0;
 }
 
 button {
-  font-size: 10vmin;
   overflow: hidden;
   background: transparent;
-  border: .05vmin solid orange;
-  width: 75vw;
-  max-width: 75vw;
-  height: 30vmin;
-  max-height: 30vmin;
-  margin: .5vmin .5vmin;
+  font-size: 10vmin;
+  border: .5vmin solid gold;
 }
 
-row > button {
-  font-size: 24vmin;
-  width: 30vmin;
+row>button {
+  font-size: 20vmin;
+  height: 25vmin;
   aspect-ratio: 1;
 }
 
+body>button {
+  margin: auto;
+  padding: 2.5vmin;
+}
+
+#turn,
 button[disabled] {
-  color: white;
+  color: black;
 }
 
 @media (orientation: portrait) {
   body {
     flex-direction: column;
   }
-  row {
-    width: 30vmin;
-  }
 }
 
 @media (orientation: landscape) {
   body {
     flex-direction: row;
-  }
-  row {
-    height: 30vmin;
   }
 }
